@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html, body {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+.App {
+    min-height: 100vh;
+    max-height: auto;
+    background: linear-gradient(to right, #5be6ff, #80f0ff);
+
+    .topDiv {
+        height: 20vh;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        header {
+            display: grid;
+            place-items: center;
+
+            h1 {
+                font-family: Fredoka One;
+                font-size: 4rem;
+            }
+        }
+
+        .score {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .bestScore {
+                background: #f5fff2;
+                cursor: pointer;
+                margin: 0 4rem 0 4rem;
+                box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+                border-radius: 20px;
+                height: 5rem;
+                width: 20rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                h1 {
+                    font-family: Fredoka One;
+                    font-size: 2rem;
+                    margin: 0 .5rem;
+                }
+            }
+
+            .curScore {
+                background: #f5fff2;
+                cursor: pointer;
+                margin: 0 4rem 0 4rem;
+                box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+                border-radius: 20px;
+                height: 5rem;
+                width: 20rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                h1 {
+                    margin: 0 .5rem;
+                    font-family: Fredoka One;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    .modal {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        background-color: #e69721;
+
+        h1 {
+            font-size: 5rem;
+            font-family: Fredoka One;
+            color: #e9e9e9f6;
+            display: grid;
+            place-items: center;
+            
+            button {
+                color: rgba(255, 255, 255, 0.733);
+                background: #ebad39;
+                cursor: pointer;
+                margin: 2rem 0 1rem 0;
+                height: 5rem;
+                width: 15rem;
+                border: none;
+                border-radius: 2rem;
+                font-family: Fredoka One;
+                font-size: 2rem;
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 0.7s;
+                }
+
+                &:active {
+                    transform: scale(0.98);
+                }
+            }
+        }
+    }
+
+    .bottomDiv {
+        min-height: 80vh;
+        max-height: auto;
+        padding: 1rem 3rem 1rem 3rem;
+
+        .Card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            min-height: 75vh;
+            max-height: auto;
+            background: linen;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            padding: 1rem;
+
+            .one {
+                background-image: url('../img/aang.png');
+                background-size: cover;
+                background-position: center;
+            }
+
+            .two {
+                background-image: url('../img/appa.png');
+                background-size: cover;
+                background-position: center;
+            }
+
+            .three {
+                background-image: url('../img/azula.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+
+            .four {
+                background-image: url('../img/bumi.png');
+                background-size: cover;
+                background-position: center;
+            }
+
+            .five {
+                background-image: url('../img/cabbage.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+
+            .six {
+                background-image: url('../img/iroh.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+        
+            .seven {
+                background-image: url('../img/katata.png');
+                background-size: cover;
+                background-position: center;
+            }
+
+            .eight {
+                background-image: url('../img/momo.png');
+                background-size: cover;
+                background-position: center;
+            }
+
+            .nine {
+                background-image: url('../img/sokka.png');
+                background-size: cover;
+                background-position: center;
+            }
+
+            .ten {
+                background-image: url('../img/suki.png');
+                background-size: cover;
+                background-position: center;
+            }
+
+            .eleven {
+                background-image: url('../img/toph.png');
+                background-size: cover;
+                background-position: center;
+            }
+
+            .twelve {
+                background-image: url('../img/zuko.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+
+            .box {
+                border: none;
+                height: 10rem;
+                width: 25rem;
+                height: 30rem;
+                border-radius: 20px;
+                cursor: pointer;
+                margin: 1rem;
+                display: grid;
+                place-items: center;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 0.7s;
+                }
+
+                &:active {
+                    transform: scale(0.98);
+                    transition: 0.7s;
+                }
+            }
+        }
+    }
+}
