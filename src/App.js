@@ -30,6 +30,8 @@ function App() {
       setGame(false)
     } else {
       if (check.length === 11) {
+        const score = 0
+        const high = 12;
         setHighScore(score, high)
         setScore(0)
         setCheck([])
