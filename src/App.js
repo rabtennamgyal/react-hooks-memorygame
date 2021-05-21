@@ -40,8 +40,6 @@ function App() {
         setCheck([...check, e.target.id])
       }
     }
-    console.log(e.target.id)
-    console.log(check)
   }
 
   const restartGame = () => {
