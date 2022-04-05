@@ -4,7 +4,7 @@ function Win({ restartGame }) {
             <h1>
                 You Won 🏆, Congratulations ✨🥳
                 <button onClick={restartGame}>
-                    PLay Again 😎
+                    Play Again 😎
                 </button>
             </h1>
         </div>
